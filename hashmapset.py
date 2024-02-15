@@ -1,8 +1,6 @@
 class hash_mapsandsets:
 
     # leitrally dictionary 
-
-
     # hashmap
 
     hm={}
