@@ -25,4 +25,18 @@ class optimal:
             if (a[i] > secondLarge and a[i] != large):
                 secondLarge = a[i]
 
-        return [secondLarge, secondSmall]       
+        return [secondLarge, secondSmall]  
+class optimal2:
+    def getSecondOrderElements(n: int,  a: [int]) -> [int]:
+    # Write your code here.
+        a.sort()
+        
+        for i in range(1,n):
+            if(a[i] > min(a) and a[i] != min(a)):
+                secondsmall=a[i]
+                a.reverse()
+            if(a[i] < max(a) and a[i] != max(a)):
+                secondlarge=a[i]
+                
+            
+            return [secondlarge,secondsmall] 
