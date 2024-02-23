@@ -17,4 +17,4 @@ class Move_Zeros_to_end:
                 a[i], a[j] = a[j], a[i]
                 j += 1
         
-        return a
+        return a # array
